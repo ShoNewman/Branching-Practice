@@ -1,7 +1,6 @@
 body {
   background-image: url(https://images.pexels.com/photos/4041277/pexels-photo-4041277.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
 }
-
 .jumbotron h1 {
   text-align: center;
 }
@@ -11,7 +10,6 @@ body {
 p {
   margin-top: 2vh;
 }
-
 .main {
   background-color: rgba(255, 255, 255, 0.74);
   padding: 10%;
@@ -47,4 +45,24 @@ p {
 form {
   clear: both;
   padding-bottom: 5vh;
+}
+#results {
+  margin-top: 10%;
+}
+#results img {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#results h2 {
+  color: rgb(230, 7, 192);
+  text-shadow: -1px 0 rgb(41, 4, 38), 0 1px black, 1px 0 black, 0 -1px black;
+}
+#results h3 {
+  text-shadow: 3px 3px;
+  font-size: 3em;
+  color:rgb(78, 10, 105)
+}
+/* to hide results */
+#keanuSelected, #gollumSelected, #danielSelected {
+  display: none;
 }
