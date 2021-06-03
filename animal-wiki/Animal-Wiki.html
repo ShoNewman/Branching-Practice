@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Wiki</title>
+</head>
+<body>
+<div class="container">
+  <h1 class="jumbotron">Animal Wiki</h1>
+  <form id="dropdownForm">
+  <div class="row">
+      <div class="col-md-10">
+        <select class="dropdown" id="animalDropdownSelected">
+          <option value='monkey'>Monkey</option>
+          <option value='octopus'>Octopus</option>
+          <option value='hamster'>Hamster</option>
+          <option value='peacock'>Peacock</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <button class='btn btn-dark' type='submit'>Submit</button>
+      </div>  
+  </div>
+</form>
+  <div class="row">
+    <div class="col-md-3" id="monkeyPic">
+      <img src='https://images.pexels.com/photos/47074/squirrel-monkey-monkey-climb-feeding-47074.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' alt='monkey' class="imgDefault">
+    </div>
+
+    <div class="col-md-3" id="octopusPic">
+      <img src='https://images.pexels.com/photos/3046629/pexels-photo-3046629.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' alt='octo' class="imgDefault">
+    </div>
+
+    <div class="col-md-3" id="hamsterPic">
+      <img src='https://images.pexels.com/photos/4520484/pexels-photo-4520484.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940' alt='ham' class="imgDefault">
+    </div>
+
+    <div class="col-md-3" id="peacockPic">
+      <img src='https://images.pexels.com/photos/2196587/pexels-photo-2196587.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' alt='pea' class="imgDefault">
+    </div>
+  </div>
+  <div id="selectedAnimal">
+    <div id="monkey">
+      <h2>Monkey</h2>
+      <p>As apes have emerged in the monkey group as sister of the old world monkeys, characteristics that describe monkeys are generally shared by apes as well. Williams et al outlined evolutionary features, including in stem groupings, contrasted against the other primates such as the tarsiers and the lemuriformes.[36] 
+      </p>
+      <p>Monkeys range in size from the pygmy marmoset, which can be as small as 117 millimetres (4.6 in) with a 172-millimetre (6.8 in) tail and just over 100 grams (3.5 oz) in weight,[37] to the male mandrill, almost 1 metre (3.3 ft) long and weighing up to 36 kilograms (79 lb).[38] Some are arboreal (living in trees) while others live on the savanna; diets differ among the various species but may contain any of the following: fruit, leaves, seeds, nuts, flowers, eggs and small animals (including insects and spiders).[39]
+      </p>
+
+    </div>
+    <div id="octopus">
+      <h2>Octopus</h2>
+      <p>Octopus (pl. octopuses, see below for variants) are soft-bodied, eight-limbed molluscs of the order Octopoda (/ɒkˈtɒpədə/, ok-TOP-ə-də). The order consists of some 300 species and is grouped within the class Cephalopoda with squids, cuttlefish, and nautiloids. Like other cephalopods, an octopus is bilaterally symmetric with two eyes and a beak, with its mouth at the center point of the eight limbs.[a] The soft body can radically alter its shape, enabling octopuses to squeeze through small gaps. They trail their eight appendages behind them as they swim. The siphon is used both for respiration and for locomotion, by expelling a jet of water. Octopuses have a complex nervous system and excellent sight, and are among the most intelligent and behaviourally diverse of all invertebrates.</p>
+      
+    </div>
+    <div id="hamster">
+      <h2>Hamster</h2>
+      <p>Hamsters are typically stout-bodied, with tails shorter than body length, and have small, furry ears, short, stocky legs, and wide feet. They have thick, silky fur, which can be long or short, colored black, grey, honey, white, brown, yellow, red, or a mix, depending on the species. Two species of hamster belonging to the genus Phodopus, Campbell's dwarf hamster (P. campbelli) and the Djungarian hamster (P. sungorus), and two of the genus Cricetulus, the Chinese striped hamster (C. barabensis) and the Chinese hamster (C. griseus) have a dark stripe down their heads to their tails. The species of genus Phodopus are the smallest, with bodies 5.5 to 10.5 centimetres (2+1⁄4 to 4+1⁄4 in) long; the largest is the European hamster (Cricetus cricetus), measuring up to 34 cm (13+1⁄2 in) long, not including a short tail of up to 6 cm (2+1⁄2 in).</p>
+    </div>
+    <div id="peacock">
+      <h2>Peacock</h2>
+      <p>Peafowl is a common name for three bird species in the genera Pavo and Afropavo of the family Phasianidae, the pheasants and their allies. Male peafowl are referred to as peacocks, and female peafowl are referred to as peahens, even though peafowl of either sex are often referred to colloquially as "peacocks".[1]</p>
+      <p>The two Asiatic species are the blue or Indian peafowl originally of the Indian subcontinent, and the green peafowl of Southeast Asia; the one African species is the Congo peafowl, native only to the Congo Basin. Male peafowl are known for their piercing calls and their extravagant plumage. The latter is especially prominent in the Asiatic species, which have an eye-spotted "tail" or "train" of covert feathers, which they display as part of a courtship ritual.</p>
+      <p>The functions of the elaborate iridescent colouration and large "train" of peacocks have been the subject of extensive scientific debate. Charles Darwin suggested that they served to attract females, and the showy features of the males had evolved by sexual selection. More recently, Amotz Zahavi proposed in his handicap theory that these features acted as honest signals of the males' fitness, since less-fit males would be disadvantaged by the difficulty of surviving with such large and conspicuous structures.</p>
+    </div>
+  </div>
+</div>  
+</body>
+</html>
