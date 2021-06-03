@@ -12,52 +12,99 @@
     <div class='jumbotron'>
       <h1>Celebrity Dating Quiz</h1>
     </div>
-    <div class='main'>
-      <h2>Who is your perfect match?!</h2>
-      <p>Dying to know who would be your ideal partner? Then you're in the right place! Take the following quiz by answering each of the questions. Select the items that are most relevant to you!</p>
-      <div class='second Section'>
-        <p>When you think of your idea of the perfect date, what comes to mind?</p>
-        <div class="radio">
-          <label>
-            <input type="radio" name="flavor" value="daniel" checked>
-            I like long walks on the beach at sunset. Holding hands, and talking about the future!
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="flavor" value="gollum">
-            I am interested in having a partner in crime. Someone who is willing to be my ride and die, as much as I am to be theirs!
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="flavor" value="keanu">
-            I just like eating food and getting dessert!
-          </label>
-        </div>
-      </div>
+      <div class='main'>
+        <h2>Who is your perfect match?!</h2>
+        <p class='intro'>Dying to know who would be your ideal partner? Then you're in the right place! Take the following quiz by answering each of the questions. Select the items that are most relevant to you!</p>
+        <form class='survey'>
+<!-- first question  -->
+          <div class='firstSection'>
+            <p class='question'>
+            When you think of your idea of the perfect date, what comes to mind?</p>
+            <div class="radio">
+              <label>
+                <input type="radio" name="firstQuestion" value="daniel" checked>
+                I like long walks on the beach at sunset. Holding hands, and talking about the future!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="firstQuestion" value="gollum">
+                I am interested in having a partner in crime. Someone who is willing to be my ride and die, as much as I am to be theirs!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="firstQuestion" value="keanu">
+                I just like eating food and getting dessert!
+              </label>
+            </div>
+          </div>
 
-      <div class='firstSection'>
-        <p>When you think of your idea of the perfect date, what comes to mind?</p>
-        <div class="radio">
-          <label>
-            <input type="radio" name="flavor" value="daniel" checked>
-            I like long walks on the beach at sunset. Holding hands, and talking about the future!
-          </label>
+<!-- second question -->
+          <div class='secondSection'>
+            <p class='question'>What is your favorite type of movie?</p>
+            <div class="radio">
+              <label>
+                <input type="radio" name="secondQuestion" value="daniel" checked>
+                I love horror films.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="secondQuestion" value="gollum">
+                My favorite films are definitely romantic comedies.
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="secondQuestion" value="keanu">
+                I love action films!
+              </label>
+            </div>
+          </div>
+
+<!-- third question -->
+          <div class='thirdSection'>
+            <p class='question'>What descirbes you best?</p>
+            <div class="radio">
+              <label>
+                <input type="radio" name="thirdQuestion" value="daniel" checked>
+                I am very athletic and love sports and working out in my free time! I am always on the move and on the go, I like living life in the fast lane!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="thirdQuestion" value="gollum">
+                I love hanging out with my dog and taking it very easy, strolling throught the park and hanging out with friends and family. Life is meant to be enjoyed, stop and smell the roses!
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="thirdQuestion" value="keanu">
+                I'm a super ambitious and also a workaholic and I am always working a my own projects in my free time. I like to prepare for the future and I believe a good life is only achieved with hard work!
+              </label>
+            </div>
+          </div>
+          <button type='submit' class='btn'>Submit!</button>
+        </form>
+      
+        <div id="results">
+          <div id="KeanuSelected">
+            <h2>Your Perfect Match is: Keanu Reeves!</h2>
+             <p>He might be ruggedly handsome, and sure he looks like he might be a douche but you don't get more down to earth then this!</p>
+            <img src="https://hips.hearstapps.com/esquireuk.cdnds.net/17/06/4000x3000/sd-aspect-1486662851-shot-01-0041-fin6-flat.jpg?resize=768:*" alt="Keanu">
+          </div>
+          <div id="gollumSelected">
+            <h2>Your Perfect Match is Gollum! </h2>
+            <p>He might be small and he might be slimy but he is the Sly dog o Misty Mountains! Plus he has "The Ring" most of the time!</p>
+            <img src="https://tinawatkins.files.wordpress.com/2012/06/nice_smeagol_always_helps.jpg?w=525" alt="Gollum">
+          </div>
+          <div id="danielSelected">
+            <h2>Your Perfect Match is: Daniel Dae Kim!</h2>
+            <p>Yep, you paired with the sweetheart that's going to get you through armagedon! You lucky lady, he is as loyal as they come, that's a guy you want by your side when your fighting the dead!</p>
+            <img src="https://www.celebritykind.com/wp-content/uploads/2020/04/shutterstock_102016858-scaled-e1610665978545.jpg" alt="Daniel">
+          </div>
         </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="flavor" value="gollum">
-            I am interested in having a partner in crime. Someone who is willing to be my ride and die, as much as I am to be theirs!
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="flavor" value="keanu">
-            I just like eating food and getting dessert!
-          </label>
-        </div>
-    </div>
   </div>
 
 
