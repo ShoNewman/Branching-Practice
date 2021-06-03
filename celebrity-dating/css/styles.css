@@ -1,7 +1,50 @@
+body {
+  background-image: url(https://images.pexels.com/photos/4041277/pexels-photo-4041277.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+
 .jumbotron h1 {
   text-align: center;
 }
-
+.jumbotron {
+  padding: 3%;
+}
 p {
   margin-top: 2vh;
+}
+
+.main {
+  background-color: rgba(255, 255, 255, 0.74);
+  padding: 10%;
+  margin-bottom: 10vh;
+}
+.jumbotron {
+  background-color: rgb(247, 184, 194);
+  margin-top: 2vh;
+  color: rgb(150, 39, 57);
+}
+.question {
+  font-weight: bold;
+  font-size: 1.3em;
+  line-height: 1.3dm;
+  color: rgb(221, 199, 214);
+  display: block;
+  background-color: rgb(66, 17, 51, 0.8);
+  padding: 5%;
+}
+.btn {
+  border: solid 1px purple;
+  background-color: rgb(119, 90, 136);
+  border-radius: 0.5em;
+  color: white;
+  font-weight: bold;
+  padding: 2%;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  float: right;
+  display: block;
+  
+}
+form {
+  clear: both;
+  padding-bottom: 5vh;
 }
