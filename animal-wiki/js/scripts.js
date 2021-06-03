@@ -1,71 +1,60 @@
 $(document).ready(function() {
   // Click picture for information
   $('#monkeyPic').click(function() {
-    $('#octopusPic, #hamsterPic, #peacockPic').removeClass('notSelected');
+    $('#octopusPic, #hamsterPic, #peacockPic').removeClass('selected');
     $('#monkey').show();
     $('#octopus, #hamster, #peacock').hide();
-    $('#octopusPic, #hamsterPic, #peacockPic').addClass('notSelected');
+    $('#octopusPic, #hamsterPic, #peacockPic').addClass('selected');
   })
   $('#octopusPic').click(function() {
-    $('#monkeyPic, #hamsterPic, #peacockPic').removeClass('notSelected');
+    $('#monkeyPic, #hamsterPic, #peacockPic').removeClass('selected');
     $('#octopus').show();
     $('#monkey, #hamster, #peacock').hide();
-    $('#monkeyPic, #hamsterPic, #peacockPic').addClass('notSelected');
+    $('#monkeyPic, #hamsterPic, #peacockPic').addClass('selected');
   }) 
   $('#hamsterPic').click(function() {
-    $('#monkeyPic, #hamsterPic, #peacockPic').removeClass('notSelected');
-    $('#octopus').show();
-    $('#monkey, #hamster, #peacock').hide();
-    $('#monkeyPic, #hamsterPic, #peacockPic').addClass('notSelected');
+    $('#monkeyPic, #octopusPic, #peacockPic').removeClass('selected');
+    $('#hamster').show();
+    $('#monkey, #octopus, #peacock').hide();
+    $('#monkeyPic, #octopusPic, #peacockPic').addClass('selected');
   })
   $('#peacockPic').click(function() {
-    $('#monkey').hide();
-    $('#octopus').hide();
-    $('#hamster').hide();
+    $('#monkeyPic, #hamsterPic, #octopusPic').removeClass('selected');
     $('#peacock').show();
-    $('#monkeyPic').addClass('notSelected');
-    $('#octopusPic').addClass('notSelected');
-    $('#hamsterPic').addClass('notSelected');
+    $('#monkey, #hamster, #octopus').hide();
+    $('#monkeyPic, #hamsterPic, #octopusPic').addClass('selected');
   })
 
 // Select from dropdown menu for information  
   $('form#dropdownForm').submit(function(event) {
     event.preventDefault();
-    $('#monkeyPic').removeClass('notSelected');
-    $('#hamsterPic').removeClass('notSelected');
-    $('#octopusPic').removeClass('notSelected');
-    $('#peacockPic').removeClass('notSelected');
+    $('#monkeyPic').removeClass('selected');
+    $('#hamsterPic').removeClass('selected');
+    $('#octopusPic').removeClass('selected');
+    $('#peacockPic').removeClass('selected');
 
     let selectedAnimal = $("select#animalDropdownSelected").val();
     
     if (selectedAnimal === 'monkey') {
       $('#monkey').show();
-      // $('#octopus, #hamster, #peacock').hide();
-      $('#octopusPic, #hamsterPic, #peacockPic').addClass('notSelected');
+      $('#octopus, #hamster, #peacock').hide();
+      $('#octopusPic, #hamsterPic, #peacockPic').addClass('imgDefault');
+      $('#monkeyPic').addClass('selected');
     } else if (selectedAnimal === 'octopus') {
-      $('#monkey, ').hide();
       $('#octopus').show();
-      $('#hamster').hide();
-      $('#peacock').hide();
-      $('#monkeyPic').addClass('notSelected');
-      $('#hamsterPic').addClass('notSelected');
-      $('#peacockPic').addClass('notSelected');
+      $('#monkeyPic, #hamsterPic, #peacockPic').addClass('imgDefault');
+      $('#octopusPic').addClass('selected');
+      $('#hamster, #monkey, #peacock').hide();
     } else if (selectedAnimal === 'hamster') {
-      $('#monkey').hide();
-      $('#octopus').hide();
       $('#hamster').show();
-      $('#peacock').hide();
-      $('#monkeyPic').addClass('notSelected');
-      $('#octopusPic').addClass('notSelected');
-      $('#peacockPic').addClass('notSelected');
+      $('#monkeyPic, #octopusPic, #peacockPic').addClass('imgDefault');
+      $('#hamsterPic').addClass('selected');
+      $('#octopus, #monkey, #peacock').hide();
     } else if (selectedAnimal === 'peacock') {
-      $('#monkey').hide();
-      $('#octopus').hide();
-      $('#hamster').hide();
       $('#peacock').show();
-      $('#monkeyPic').addClass('notSelected');
-      $('#octopusPic').addClass('notSelected');
-      $('#hamsterPic').addClass('notSelected');
+      $('#monkeyPic, #octopusPic, #hamserPic').addClass('imgDefault');
+      $('#peacockPic').addClass('selected');
+      $('#octopus, #monkey, #hamster').hide();
     }
   })
 });
